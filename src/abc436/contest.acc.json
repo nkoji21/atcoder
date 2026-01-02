@@ -1,0 +1,56 @@
+{
+  "contest": {
+    "id": "abc436",
+    "title": "AtCoder Beginner Contest 436",
+    "url": "https://atcoder.jp/contests/abc436"
+  },
+  "tasks": [
+    {
+      "id": "abc436_a",
+      "label": "A",
+      "title": "o-padding",
+      "url": "https://atcoder.jp/contests/abc436/tasks/abc436_a",
+      "directory": {
+        "path": "a",
+        "testdir": "test",
+        "submit": "main.go"
+      }
+    },
+    {
+      "id": "abc436_b",
+      "label": "B",
+      "title": "Magic Square",
+      "url": "https://atcoder.jp/contests/abc436/tasks/abc436_b"
+    },
+    {
+      "id": "abc436_c",
+      "label": "C",
+      "title": "2x2 Placing",
+      "url": "https://atcoder.jp/contests/abc436/tasks/abc436_c"
+    },
+    {
+      "id": "abc436_d",
+      "label": "D",
+      "title": "Teleport Maze ",
+      "url": "https://atcoder.jp/contests/abc436/tasks/abc436_d"
+    },
+    {
+      "id": "abc436_e",
+      "label": "E",
+      "title": "Minimum Swap",
+      "url": "https://atcoder.jp/contests/abc436/tasks/abc436_e"
+    },
+    {
+      "id": "abc436_f",
+      "label": "F",
+      "title": "Starry Landscape Photo",
+      "url": "https://atcoder.jp/contests/abc436/tasks/abc436_f"
+    },
+    {
+      "id": "abc436_g",
+      "label": "G",
+      "title": "Linear Inequation",
+      "url": "https://atcoder.jp/contests/abc436/tasks/abc436_g"
+    }
+  ]
+}

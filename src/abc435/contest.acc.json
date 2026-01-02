@@ -1,0 +1,56 @@
+{
+  "contest": {
+    "id": "abc435",
+    "title": "AtCoder Beginner Contest 435",
+    "url": "https://atcoder.jp/contests/abc435"
+  },
+  "tasks": [
+    {
+      "id": "abc435_a",
+      "label": "A",
+      "title": "Triangular Number",
+      "url": "https://atcoder.jp/contests/abc435/tasks/abc435_a",
+      "directory": {
+        "path": "a",
+        "testdir": "test",
+        "submit": "main.go"
+      }
+    },
+    {
+      "id": "abc435_b",
+      "label": "B",
+      "title": "No-Divisible Range",
+      "url": "https://atcoder.jp/contests/abc435/tasks/abc435_b"
+    },
+    {
+      "id": "abc435_c",
+      "label": "C",
+      "title": "Domino",
+      "url": "https://atcoder.jp/contests/abc435/tasks/abc435_c"
+    },
+    {
+      "id": "abc435_d",
+      "label": "D",
+      "title": "Reachability Query 2",
+      "url": "https://atcoder.jp/contests/abc435/tasks/abc435_d"
+    },
+    {
+      "id": "abc435_e",
+      "label": "E",
+      "title": "Cover query",
+      "url": "https://atcoder.jp/contests/abc435/tasks/abc435_e"
+    },
+    {
+      "id": "abc435_f",
+      "label": "F",
+      "title": "Cat exercise",
+      "url": "https://atcoder.jp/contests/abc435/tasks/abc435_f"
+    },
+    {
+      "id": "abc435_g",
+      "label": "G",
+      "title": "Domino Arrangement",
+      "url": "https://atcoder.jp/contests/abc435/tasks/abc435_g"
+    }
+  ]
+}

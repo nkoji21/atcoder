@@ -1,0 +1,56 @@
+{
+  "contest": {
+    "id": "abc432",
+    "title": "OMRON Corporation Programming Contest 2025 #2 (AtCoder Beginner Contest 432)",
+    "url": "https://atcoder.jp/contests/abc432"
+  },
+  "tasks": [
+    {
+      "id": "abc432_a",
+      "label": "A",
+      "title": "Permute to Maximize",
+      "url": "https://atcoder.jp/contests/abc432/tasks/abc432_a",
+      "directory": {
+        "path": "a",
+        "testdir": "test",
+        "submit": "main.go"
+      }
+    },
+    {
+      "id": "abc432_b",
+      "label": "B",
+      "title": "Permute to Minimize",
+      "url": "https://atcoder.jp/contests/abc432/tasks/abc432_b"
+    },
+    {
+      "id": "abc432_c",
+      "label": "C",
+      "title": "Candy Tribulation",
+      "url": "https://atcoder.jp/contests/abc432/tasks/abc432_c"
+    },
+    {
+      "id": "abc432_d",
+      "label": "D",
+      "title": "Suddenly, A Tempest",
+      "url": "https://atcoder.jp/contests/abc432/tasks/abc432_d"
+    },
+    {
+      "id": "abc432_e",
+      "label": "E",
+      "title": "Clamp",
+      "url": "https://atcoder.jp/contests/abc432/tasks/abc432_e"
+    },
+    {
+      "id": "abc432_f",
+      "label": "F",
+      "title": "Candy Redistribution",
+      "url": "https://atcoder.jp/contests/abc432/tasks/abc432_f"
+    },
+    {
+      "id": "abc432_g",
+      "label": "G",
+      "title": "Sum of Binom(A, B)",
+      "url": "https://atcoder.jp/contests/abc432/tasks/abc432_g"
+    }
+  ]
+}

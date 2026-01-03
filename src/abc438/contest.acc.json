@@ -20,7 +20,12 @@
       "id": "abc438_b",
       "label": "B",
       "title": "Substring 2",
-      "url": "https://atcoder.jp/contests/abc438/tasks/abc438_b"
+      "url": "https://atcoder.jp/contests/abc438/tasks/abc438_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.go"
+      }
     },
     {
       "id": "abc438_c",

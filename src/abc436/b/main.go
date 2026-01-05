@@ -1,6 +1,24 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
+
+func sqrt(i int) int {
+	return int(math.Sqrt(float64(i)))
+}
+
+func mod(v, m int) int {
+	if m <= 0 {
+		panic("mod: m must be positive")
+	}
+	r := v % m
+	if r < 0 {
+		r += m
+	}
+	return r
+}
 
 func main() {
 	var n int
@@ -15,10 +33,11 @@ func main() {
 	grid[r][c] = k
 
 	for i := 0; i < ((n * n) - 1); i++ {
-		if grid[((r-1)%n+n)%n][(c+1)%n] == 0 {
-			grid[((r-1)%n+n)%n][(c+1)%n] = k + 1
-			k = grid[((r-1)%n+n)%n][(c+1)%n]
-			r, c = ((r-1)%n+n)%n, (c+1)%n
+		nr, nc := mod(r-1, n), (c+1)%n
+		if grid[nr][nc] == 0 {
+			grid[nr][nc] = k + 1
+			k = grid[nr][nc]
+			r, c = nr, nc
 		} else {
 			grid[(r+1)%n][c] = k + 1
 			k = grid[(r+1)%n][c]

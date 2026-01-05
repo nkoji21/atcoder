@@ -20,7 +20,12 @@
       "id": "abc437_b",
       "label": "B",
       "title": "Tombola",
-      "url": "https://atcoder.jp/contests/abc437/tasks/abc437_b"
+      "url": "https://atcoder.jp/contests/abc437/tasks/abc437_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.go"
+      }
     },
     {
       "id": "abc437_c",

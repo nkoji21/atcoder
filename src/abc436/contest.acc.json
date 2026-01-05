@@ -20,7 +20,12 @@
       "id": "abc436_b",
       "label": "B",
       "title": "Magic Square",
-      "url": "https://atcoder.jp/contests/abc436/tasks/abc436_b"
+      "url": "https://atcoder.jp/contests/abc436/tasks/abc436_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.go"
+      }
     },
     {
       "id": "abc436_c",

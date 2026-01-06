@@ -20,7 +20,12 @@
       "id": "abc435_b",
       "label": "B",
       "title": "No-Divisible Range",
-      "url": "https://atcoder.jp/contests/abc435/tasks/abc435_b"
+      "url": "https://atcoder.jp/contests/abc435/tasks/abc435_b",
+      "directory": {
+        "path": "b",
+        "testdir": "test",
+        "submit": "main.go"
+      }
     },
     {
       "id": "abc435_c",

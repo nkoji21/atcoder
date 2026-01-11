@@ -9,16 +9,15 @@ YELLOW='\033[0;33m'
 BLUE='\033[0;34m'
 RESET='\033[0m'
 
-if [ ! -f ./contest ]; then
-  echo -e "${RED}❌ Error: contest file not found${RESET}"
-  exit 1
+contest=""
+if [ -f ./contest ]; then
+  contest=$(cat ./contest)
 fi
 
-contest=$(cat ./contest)
-
 if [ -z "$contest" ]; then
-  echo -e "${RED}❌ Error: contest file is empty${RESET}"
-  exit 1
+  echo -ne "${BLUE}📝 Contest? ${RESET}"
+  read contest
+  echo "$contest" > ./contest
 fi
 
 echo -ne "${BLUE}📝 Problem? ${RESET}"

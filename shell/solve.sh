@@ -30,9 +30,10 @@ echo -e "${BLUE}📁 Saving to ${dir}/main.go${RESET}"
 mkdir -p "$dir"
 cp main.go "$dir/main.go"
 
-echo -e "${YELLOW}📝 Committing...${RESET}"
+echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
 git add "$dir/main.go"
-git commit -m "${contest} ${problem}" --quiet
+git commit -m "${contest} ${problem}"
+echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${RESET}"
 
 echo -e "${GREEN}🔄 Resetting main.go from template${RESET}"
 cp _template/main.go ./main.go

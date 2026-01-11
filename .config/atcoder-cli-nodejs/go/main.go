@@ -6,11 +6,16 @@ import (
 	"os"
 )
 
+func main() {
+	fmt.Println("Hello, World!")
+}
+
+// ==============================
+// Input Functions
+// ==============================
 var (
 	reader = bufio.NewReader(os.Stdin)
 )
-
-// ========== 入力用の関数 ==========
 
 // int型の入力を読み込む
 func readInt() int {
@@ -42,8 +47,4 @@ func readStrings(n int) []string {
 		fmt.Fscan(reader, &s[i])
 	}
 	return s
-}
-
-func main() {
-	fmt.Println("Hello, World!")
 }

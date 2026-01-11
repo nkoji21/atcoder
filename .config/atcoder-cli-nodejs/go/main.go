@@ -1,25 +1,49 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-	"math"
+	"os"
 )
 
-func sqrt(i int) int {
-	return int(math.Sqrt(float64(i)))
+var (
+	reader = bufio.NewReader(os.Stdin)
+)
+
+// ========== 入力用の関数 ==========
+
+// int型の入力を読み込む
+func readInt() int {
+	var n int
+	fmt.Fscan(reader, &n)
+	return n
 }
 
-func mod(v, m int) int {
-	if m <= 0 {
-		panic("mod: m must be positive")
+// int型の配列を読み込む
+func readInts(n int) []int {
+	s := make([]int, n)
+	for i := range s {
+		fmt.Fscan(reader, &s[i])
 	}
-	r := v % m
-	if r < 0 {
-		r += m
+	return s
+}
+
+// string型の入力を読み込む
+func readString() string {
+	var s string
+	fmt.Fscan(reader, &s)
+	return s
+}
+
+// string型の配列を読み込む
+func readStrings(n int) []string {
+	s := make([]string, n)
+	for i := range s {
+		fmt.Fscan(reader, &s[i])
 	}
-	return r
+	return s
 }
 
 func main() {
-	fmt.Println("Hello World")
+	fmt.Println("Hello, World!")
 }

@@ -1,2 +1,6 @@
-**/test
+test
 *.out
+
+contest
+/main.go
+/main

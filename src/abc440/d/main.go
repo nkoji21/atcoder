@@ -3,63 +3,61 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"math"
 	"os"
 	"sort"
 )
 
-func sqrt(i int) int {
-	return int(math.Sqrt(float64(i)))
+var (
+	reader = bufio.NewReader(os.Stdin)
+)
+
+// ========== 入力用の関数 ==========
+
+// int型の入力を読み込む
+func readInt() int {
+	var n int
+	fmt.Fscan(reader, &n)
+	return n
 }
 
-func mod(v, m int) int {
-	if m <= 0 {
-		panic("mod: m must be positive")
+// int型の配列を読み込む
+func readInts(n int) []int {
+	s := make([]int, n)
+	for i := range s {
+		fmt.Fscan(reader, &s[i])
 	}
-	r := v % m
-	if r < 0 {
-		r += m
-	}
-	return r
+	return s
 }
 
-// 1~nの数字の桁の和を求める
-func digitSum(n int) int {
-	sum := 0
+// string型の入力を読み込む
+func readString() string {
+	var s string
+	fmt.Fscan(reader, &s)
+	return s
+}
 
-	for n != 0 {
-		sum += n % 10
-		n /= 10
+// string型の配列を読み込む
+func readStrings(n int) []string {
+	s := make([]string, n)
+	for i := range s {
+		fmt.Fscan(reader, &s[i])
 	}
-
-	return sum
+	return s
 }
 
 func main() {
-	reader := bufio.NewReader(os.Stdin)
-	writer := bufio.NewWriter(os.Stdout)
-	defer writer.Flush()
-
-	var N, Q int
-	fmt.Fscan(reader, &N, &Q)
-
-	A := make([]int, N)
-	for i := 0; i < N; i++ {
-		fmt.Fscan(reader, &A[i])
-	}
+	N, Q := readInt(), readInt()
+	A := readInts(N)
 
 	sort.Ints(A)
 
 	for j := 0; j < Q; j++ {
-		var X, Y int
-		fmt.Fscan(reader, &X, &Y)
-
-		baseIdx := sort.SearchInts(A, X)
+		X, Y := readInt(), readInt()
 
 		// f(ans) = X以上ans以下でAに含まれない要素数を求める
 		f := func(ans int) int {
 			total := ans - X + 1
-			inA := sort.SearchInts(A, ans+1) - baseIdx
+			inA := sort.SearchInts(A, ans+1) - sort.SearchInts(A, X)
 			return total - inA
 		}
 
@@ -73,6 +71,6 @@ func main() {
 				lo = mid + 1
 			}
 		}
-		fmt.Fprintln(writer, lo)
+		fmt.Println(lo)
 	}
 }

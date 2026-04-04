@@ -2,5 +2,7 @@ test
 *.out
 
 contest
+language
 /main.go
+/main.c
 /main

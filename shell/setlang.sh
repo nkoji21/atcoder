@@ -29,12 +29,25 @@ case "$lang" in
     ;;
 esac
 
+prev_lang=""
+if [ -f ./language ]; then
+  prev_lang=$(cat ./language)
+fi
+
 echo "$lang" > language
 
 if [ ! -f "_template/${lang}/main.${ext}" ]; then
   echo -e "${RED}❌ Template not found: _template/${lang}/main.${ext}${RESET}"
   exit 1
 fi
+
+# 前の言語のファイルを削除
+for old_ext in go c cpp; do
+  if [ "$old_ext" != "$ext" ] && [ -f "./main.${old_ext}" ]; then
+    rm "./main.${old_ext}"
+    echo -e "${YELLOW}🗑️  Removed: main.${old_ext}${RESET}"
+  fi
+done
 
 cp "_template/${lang}/main.${ext}" "./main.${ext}"
 

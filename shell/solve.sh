@@ -22,6 +22,9 @@ case "$lang" in
   c)
     ext="c"
     ;;
+  cpp)
+    ext="cpp"
+    ;;
   *)
     echo -e "${RED}❌ Invalid language in ./language: ${lang}${RESET}"
     exit 1

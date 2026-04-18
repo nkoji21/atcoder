@@ -15,7 +15,7 @@ case "$lang" in
   go)
     go run main.go
     ;;
-  c)
+  c|cpp)
     if [ ! -f ./main ]; then
       echo -e "${RED}❌ Binary not found. Run 'make' to build first.${RESET}"
       exit 1

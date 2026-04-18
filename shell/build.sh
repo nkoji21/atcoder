@@ -20,6 +20,10 @@ case "$lang" in
     gcc main.c -o main
     echo -e "${GREEN}✅ Built: main${RESET}"
     ;;
+  cpp)
+    g++ -std=c++17 -O2 main.cpp -o main
+    echo -e "${GREEN}✅ Built: main${RESET}"
+    ;;
   *)
     echo -e "${RED}❌ Invalid language in ./language: ${lang}${RESET}"
     exit 1

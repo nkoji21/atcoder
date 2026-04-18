@@ -1,4 +1,15 @@
 {
+  "clangd.arguments": [
+    "--query-driver=/opt/homebrew/bin/g++*,/usr/local/bin/g++*"
+  ],
+  "[c]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    "editor.formatOnSave": true
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    "editor.formatOnSave": true
+  },
   "[go]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {

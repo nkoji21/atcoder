@@ -21,7 +21,9 @@ case "$lang" in
     echo -e "${GREEN}✅ Built: main${RESET}"
     ;;
   cpp)
-    g++ -std=c++17 -O2 main.cpp -o main
+    SYSROOT=$(xcrun --show-sdk-path 2>/dev/null || echo "")
+    SYSROOT_FLAG=${SYSROOT:+-isysroot "$SYSROOT"}
+    g++-15 -std=c++17 -O2 $SYSROOT_FLAG main.cpp -o main
     echo -e "${GREEN}✅ Built: main${RESET}"
     ;;
   *)

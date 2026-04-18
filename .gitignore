@@ -5,4 +5,7 @@ contest
 language
 /main.go
 /main.c
+/main.cpp
 /main
+
+.clangd

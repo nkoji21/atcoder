@@ -2,13 +2,9 @@
 
 AtCoderの解答管理リポジトリ
 
-## 色変記録
-
-| 色 | Rating | 達成日 |
-|----|--------|--------|
-| 茶 | 400+ | - |
-| 緑 | 800+ | - |
-| 水 | 1200+ | - |
+<a href="https://atcoder.jp/users/nkoji21">
+  <img src="https://atcoder-readme-stats.vercel.app/stats/nkoji21?show_icons=true&width=435&height=200" />
+</a>
 
 ## 使い方
 
